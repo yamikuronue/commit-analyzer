@@ -51,6 +51,23 @@ test('derive version number from commits', (t) => {
     })
   })
 
+  t.test('minor/feature version yami style', (tt) => {
+    tt.plan(2)
+
+    analyzer({}, {
+      commits: [{
+        hash: 'asdf',
+        message: 'fix: nasty bug'
+      }, {
+        hash: '1234',
+        message: 'Feature: cool feature'
+      }]
+    }, (err, type) => {
+      tt.error(err)
+      tt.is(type, 'minor')
+    })
+  })
+
   t.test('major/breaking version', (tt) => {
     tt.plan(2)
 

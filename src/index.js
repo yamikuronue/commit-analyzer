@@ -15,7 +15,7 @@ module.exports = function (pluginConfig, {commits}, cb) {
       return false
     }
 
-    if (commit.type === 'feat') type = 'minor'
+    if (commit.type === 'feat' || commit.type === 'Feature') type = 'minor'
 
     if (!type && commit.type === 'fix') type = 'patch'
 
