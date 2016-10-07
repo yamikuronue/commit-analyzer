@@ -1,5 +1,6 @@
 {
   "name": "@yamikuronue/commit-analyzer",
+  "version": "0.1.1",
   "description": "derive next semantic version from commits",
   "author": "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
   "bugs": {
