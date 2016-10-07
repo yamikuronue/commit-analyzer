@@ -1,5 +1,5 @@
 {
-  "name": "@semantic-release/commit-analyzer",
+  "name": "@yamikuronue/commit-analyzer",
   "description": "derive next semantic version from commits",
   "author": "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
   "bugs": {
@@ -25,7 +25,7 @@
     "standard": "^4.2.1",
     "tap": "^1.2.0"
   },
-  "homepage": "https://github.com/semantic-release/commit-analyzer#readme",
+  "homepage": "https://github.com/yamikuronue/commit-analyzer#readme",
   "keywords": [
     "semantic-release",
     "author",
@@ -42,7 +42,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/semantic-release/commit-analyzer.git"
+    "url": "git+https://github.com/yamikuronue/commit-analyzer.git"
   },
   "scripts": {
     "build": "rimraf dist && mkdirp dist && babel src --out-dir dist",
